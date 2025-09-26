@@ -103,3 +103,21 @@ body {
   outline: none;
   background: linear-gradient(145deg, #e6f3ff, #cce7ff);
 }
+
+.winning-square {
+  background: linear-gradient(145deg, #8a7bff, #a691ff) !important;
+  color: white !important;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 8px rgba(138, 123, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 16px rgba(138, 123, 255, 0.7);
+  }
+  100% {
+    box-shadow: 0 4px 8px rgba(138, 123, 255, 0.4);
+  }
+}
