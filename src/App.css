@@ -1,0 +1,105 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+#root {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.restart-button {
+  background: linear-gradient(145deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.restart-button:hover {
+  background: linear-gradient(145deg, #5a6fd8, #6a4190);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.restart-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #333;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -1px;
+}
+
+.square:hover {
+  background: linear-gradient(145deg, #f0f0f0, #d6d6d6);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.square:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.board-row:first-child .square {
+  border-top: 3px solid #333;
+}
+
+.board-row:last-child .square {
+  border-bottom: 3px solid #333;
+}
+
+.square:first-child {
+  border-left: 3px solid #333;
+}
+
+.square:last-child {
+  border-right: 3px solid #333;
+}
+
+.square:focus {
+  outline: none;
+  background: linear-gradient(145deg, #e6f3ff, #cce7ff);
+}
